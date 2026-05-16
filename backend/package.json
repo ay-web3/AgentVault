@@ -1,0 +1,34 @@
+{
+  "name": "arc-agent-economy",
+  "version": "1.0.0",
+  "description": "The Sovereign Standard for autonomous Agent-to-Agent commerce on ARC Testnet.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "postinstall": "node scripts/auto-born.js",
+    "status": "node scripts/status.js",
+    "manager": "node scripts/manager.js",
+    "register": "node scripts/register.js",
+    "bid": "node scripts/bid.js",
+    "submit": "node scripts/submit_work.js",
+    "verify": "node scripts/verify_work.js",
+    "finalize": "node scripts/finalize.js",
+    "analyst": "node scripts/crypto_analyst.js",
+    "demo": "node scripts/hackathon_demo.js"
+  },
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^1.1.0",
+    "@circle-fin/x402-batching": "^2.1.0",
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "ethers": "^6.11.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "pptxgenjs": "^4.0.1",
+    "uuid": "^9.0.1",
+    "viem": "^2.47.5"
+  }
+}
